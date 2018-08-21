@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hw9.activity.LegislatorsDetailActivity">
+
+    <include layout="@layout/include_layout_title"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:padding="15dp">
+            <CheckBox android:id="@+id/cb_fav" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="right"
+                      android:button="@drawable/selector_fav"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal">
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Committee ID:"
+                          android:textColor="#000000"
+                          android:textSize="16sp"/>
+                <TextView android:id="@+id/tv_committee_id" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="80dp"
+                          android:gravity="right"
+                          android:text="N.A"
+                          android:textSize="16sp"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal">
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Name:"
+                          android:textColor="#000000"
+                          android:textSize="16sp"/>
+                <TextView android:id="@+id/tv_name" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="80dp"
+                          android:gravity="right"
+                          android:text="N.A"
+                          android:textSize="16sp"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal">
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Chamber:"
+                          android:textColor="#000000"
+                          android:textSize="16sp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="80dp"
+                              android:gravity="right|center_vertical"
+                              android:orientation="horizontal">
+                    <ImageView android:layout_width="wrap_content"
+                               android:id="@+id/iv"
+                               android:visibility="invisible"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/h"/>
+                    <TextView android:id="@+id/tv_chamber" android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="10dp"
+                              android:text="N.A"
+                              android:textSize="16sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal">
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Parent Committee:"
+                          android:textColor="#000000"
+                          android:textSize="16sp"/>
+                <TextView android:id="@+id/tv_parent_committee" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="80dp"
+                          android:gravity="right"
+                          android:text="N.A"
+                          android:textSize="16sp"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal">
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Contact:"
+                          android:textColor="#000000"
+                          android:textSize="16sp"/>
+                <TextView android:id="@+id/tv_contact" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="80dp"
+                          android:gravity="right"
+                          android:text="N.A"
+                          android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="15dp"
+                          android:orientation="horizontal">
+
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Office:"
+                          android:textColor="#000000"
+                          android:textSize="16sp"/>
+                <TextView android:id="@+id/tv_office" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="80dp"
+                          android:gravity="right"
+                          android:text="N.A"
+                          android:textSize="16sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
